@@ -1,0 +1,272 @@
+<!doctype HTML!>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/6364d0e878.js" crossorigin="anonymous"></script>
+        <title>
+        WAB Design
+        </title>
+    </head>
+    <style>    
+        
+        body {margin:0;
+        font-family: 'Roboto' sans-serif;
+        /*Margin is set to 0 so there is no border around the page.*/
+            
+            background-size: 100% 100%;;
+        }       
+        .topbar {  
+            background-color: black;
+            padding: 5px;
+            border-bottom: 3px solid #FDF229; 
+            text-align: center;
+        /*margin sets the space from top of page to text*/         
+   /* ^top bar is the top title bar for "wab dt".
+            
+   This is the CSS to set the bacground color and width.*/}
+        #title-text {
+            margin: 0;
+            color: #FDF229;
+            
+        /*"title" classes relate to "WAB Design" title and link*/}  
+        #titletoptext:visited {
+            text-align: center;
+            text-decoration: none;
+            color: #FDF229;}
+        #titletoptext:link {
+            font-size: 450%;
+            font-family: 'Roboto';
+            text-align: center;
+            text-decoration: none;
+            color: #FDF229;
+            /* 'a' link decorations are important to ensure that no lines or liunk designs show up when they shouldnt be there.*/ }
+        h3 {
+            margin-top: -3%;
+            font-size: 30px; } 
+        /* The "i" tag is linked to the plus icon from fontawesome.com. This block is here to place and color the icon*/ 
+        i {  
+        display: inline-block;
+        margin-top: -68px;
+        padding-right: 20px;   
+        float: right;
+        color: white;
+        font-size: 40px;}
+        i:hover{
+            background-color: black;
+            color:white; 
+            opacity: 50%;
+            }  
+        /* The popup (background) */
+        .modal {
+            display: none; 
+            position: fixed; 
+            z-index: 1; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%; 
+            overflow: auto; 
+            background-color: rgb(0,0,0); 
+            background-color: rgba(0,0,0,0.4);}
+        .modal-content {
+            background-color: #fefefe;
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 4px solid black;
+            border-radius:20px;
+            width: 20%; /* Could be more or less, depending on screen size */
+}
+        #dt{
+            color: yellow;
+            font-weight: bold;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+            font-family: 'Roboto' sans-serif;
+        }
+        /* The Close Button */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: -5%;
+}
+        .close:hover,
+        .close:focus {
+            margin-top: -5%;
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+}
+         /* video button design */   
+        .videonav{
+            display: inline-block;
+            border-radius:20px;
+            font-size: 4vw;
+            text-align: center;
+            font-size-adjust: auto;
+            font-family: 'roboto';
+            transition: 0.5s;
+            background-color: #FDF229;
+            border: 5px solid black;
+            width: 13%;
+            margin-top: 140px;
+            margin-left: 2%;
+            opacity: 90%;
+            margin-right: 6.5%;
+            float: left;
+            padding: 7%;
+            text-decoration: none;
+            color: black;}     
+        .videonav:hover {
+            transition: 0.2s;
+            background-color: black;
+            color: #FDF229; }    
+        /* pdf button design*/
+        .pdfnav{
+            display: inline-block; 
+            border-radius:20px;
+            font-size: 4vw;
+            text-align: center;
+            transition: 0.5s;
+            background-color: #FDF229;
+            opacity: 90%;
+            border: 5px solid black;
+            width: 13%;
+            margin-top: 140px;
+            padding: 7%;
+            text-decoration: none;
+            color: black;}  
+        .pdfnav:hover {
+            transition: 0.2s;
+            background-color: black;
+            color: #FDF229; }
+        /* other button design*/
+        .othernav{
+            display: inline-block; 
+            border-radius:20px;
+            font-size: 4vw;
+            text-align: center;
+            transition: 0.5s;
+            background-color: #FDF229;
+            border: 5px solid black;
+            width: 13%;
+            margin-top: 140px;
+            opacity: 90%;
+            margin-right: 2%;
+            float: right;
+            padding: 7%;
+            text-decoration: none;
+            color: black;}  
+        .othernav:hover {
+            transition: 0.2s;
+            background-color: black;
+            color: #FDF229; }
+        /* footer design*/
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding-left: 25px;
+            font-size: 10px;}
+        
+ </style>
+    <body>
+        
+    <div class="topbar">  
+         <div id="title-text">
+                <a id="titletoptext" href="index.html">WAB Design Safety</a>
+                    </div> 
+        </div>
+        
+        <a id="myBtn"><i class="fas fa-plus"></i><a>
+        <!-- The Popup box -->
+        <div id="myModal" class="modal">
+
+         <!-- Pop-up content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div class="container">
+     
+    <div>
+        
+        <h3><center>Login <text id="dt">DT</text></center></h3>
+        <center><form id="login-form">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
+        <input type="submit" value="Login" id="login-form-submit">
+        </form>
+      </div> 
+</div>
+
+                
+</div>
+           <!-- JavaScript for popup box --> 
+        <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+}
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+}
+
+        // When the user clicks anywhere outside of the modal, close it
+        
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+}
+}  
+        
+        //variables for login page//
+const loginForm = document.getElementById("login-form");
+const loginButton = document.getElementById("login-form-submit");
+const loginErrorMsg = document.getElementById("login-error-msg");
+        //login page if statment//
+        loginButton.addEventListener("click", (e) => {
+e.preventDefault();
+    
+    const password = loginForm.password.value;
+if (password === "designtech") {
+        window.location.href = "add.html"
+    } else {
+        alert("Incorrect Password");
+        loginErrorMsg.style.opacity = 1;
+    }
+})  
+</script>
+          
+
+</div>
+    
+        
+        <!-- html for button text and links -->
+        <a href="Videos.html" class="videonav">Videos</a>  
+        <a href="PDFs.html" class="pdfnav">PDFs</a>
+        <a href="Other.html" class="othernav">Other</a>
+    
+        
+    <div class="footer">
+        <p>IB DT Safty and instruction page<br>©2020 </p> 
+    </div>    
+        
+    </body>
+</html>

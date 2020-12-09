@@ -1,0 +1,85 @@
+<!doctype HTML!>
+<html>
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Roboto Slab'>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+        Add Files
+        </title>
+    </head>
+    <style>       
+ body {margin:0;/*Margin is set to 0 so there is no border around the page.*/}   
+        
+        .topbar {  
+  background-color: black;
+    padding: 5px;
+    /*margin sets the space from top of page to text*/         
+   /* ^top bar is the top title bar for "wab dt".
+    This is the CSS to set the bacground color and width.
+    */
+}
+        #title-text {
+            margin: 0;
+            color: #FDF229;
+            font-size: 25px;
+        /*"title" classs link to "WAB Design" title and link*/
+        }  
+        #titletoptext:visited {
+            text-align: center;
+            text-decoration: none;
+            color: #FDF229;
+            
+}
+        #titletoptext:link {
+            font-size: 60px;
+            font-family: sans-serif;
+            text-align: center;
+            text-decoration: none;
+            color: #FDF229;
+            /* 'a' link decorations are important to ensure that no lines or liunk designs show up when they shouldnt be there.*/}
+        .title {color: white}
+        .add{
+            margin-top: 10%;
+            margin-left: 20%;
+            margin-right: 20%;
+            align-items: center;
+            width: 50%;
+            height: 100px;  
+            padding: 50px;
+            border: 3px solid black;
+            border-radius: 20px }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: black;
+            color: white;
+            text-align: left;
+            padding-left: 25px;
+            font-size: 10px;} 
+
+        
+    </style>
+    <body>
+    <div class="topbar">  
+         <div id="title-text">
+                <center><a id="titletoptext" href="index.html">Add Files <text class="title"></text></a></center>
+                    </div>
+        </div>
+    <br />   
+<div class="add">
+    <center><form action="upload.php" method="post" enctype="multipart/form-data">
+        Select image to upload:
+    <p>
+    <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit"></p>
+    </form></center>
+</div>
+        
+         <div class="footer">
+        <p>IB DT Safty and instruction page<br>©2020 </p>
+        
+    </div>
+    </body>
+        
